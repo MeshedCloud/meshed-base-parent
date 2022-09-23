@@ -4,11 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.alibaba.cola</groupId>
-        <artifactId>cola-components-bom</artifactId>
-        <version>4.3.1</version>
-    </parent>
     <groupId>cn.meshed.base</groupId>
     <artifactId>meshed-base-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -23,12 +18,19 @@
         <!--  lombok依赖 -->
         <lombok.version>1.18.22</lombok.version>
         <slf4j-api.version>1.6.1</slf4j-api.version>
-
+        <cola.components.version>4.3.1</cola.components.version>
     </properties>
 
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.alibaba.cola</groupId>
+                <artifactId>cola-components-bom</artifactId>
+                <version>${cola.components.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!-- lombok -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
