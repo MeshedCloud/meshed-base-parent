@@ -13,7 +13,11 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <spring.version>5.3.19</spring.version>
+        <!--  spring-web依赖 -->
+        <spring-web.version>5.3.22</spring-web.version>
+        <!--  spring-context依赖 -->
         <spring-context.version>5.3.22</spring-context.version>
+        <!--  校验依赖 -->
         <validation-api.version>2.0.1.Final</validation-api.version>
         <!-- Spring Boot 依赖 -->
         <spring.boot.version>2.6.11</spring.boot.version>
@@ -48,6 +52,11 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
                 <version>${spring-context.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring-web.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.validation</groupId>
