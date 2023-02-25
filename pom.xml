@@ -6,7 +6,7 @@
 
     <groupId>cn.meshed.base</groupId>
     <artifactId>meshed-base-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -14,6 +14,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <spring.version>5.3.19</spring.version>
         <spring-context.version>5.3.22</spring-context.version>
+        <validation-api.version>2.0.1.Final</validation-api.version>
         <!-- Spring Boot 依赖 -->
         <spring.boot.version>2.6.11</spring.boot.version>
         <!--  lombok依赖 -->
@@ -47,6 +48,11 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
                 <version>${spring-context.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${validation-api.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
